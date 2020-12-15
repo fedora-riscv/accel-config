@@ -24,6 +24,7 @@ BuildRequires:	pkgconfig(uuid)
 BuildRequires:	pkgconfig(json-c)
 BuildRequires:	pkgconfig(libudev)
 BuildRequires:	systemd
+BuildRequires: make
 
 # accel-config is for configuring Intel DSA (Data-Streaming
 # Accelerator) subsystem in the Linux kernel. It supports x86 only.
