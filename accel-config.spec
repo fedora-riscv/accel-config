@@ -8,7 +8,7 @@ Summary:	Configure accelerator subsystem devices
 # The entire source code is under GPLv2 except for accel-config
 # library which is mostly LGPLv2.1, ccan/list which is BSD-MIT and
 # the rest of ccan which is CC0.
-License:	GPLv2 and LGPLv2.1 and MIT and CC0
+License:	GPLv2 and LGPLv2+ and MIT and CC0
 URL:		https://github.com/intel/%{project_name}
 Source0:	%{URL}/archive/%{name}-v%{version}.tar.gz
 
@@ -36,7 +36,7 @@ Utility library for configuring the accelerator subsystem.
 
 %package devel
 Summary:	Development files for libaccfg
-License:	LGPLv2.1
+License:	LGPLv2+
 Requires:	%{name}-libs%{?_isa} = %{version}-%{release}
 
 %description devel
@@ -48,7 +48,7 @@ developing applications that use %{name}.
 Summary:	Configuration library for accelerator subsystem devices
 # All source code of configuration library is LGPLv2.1, except
 # ccan/list which is BSD-MIT and the rest of ccan/ which is CC0.
-License:	LGPLv2.1 and MIT and CC0
+License:	LGPLv2+ and MIT and CC0
 Requires:	%{name}%{?_isa} = %{version}-%{release}
 
 %description libs
