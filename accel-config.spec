@@ -2,7 +2,7 @@
 %global	debug_package	%{nil}
 
 Name:		accel-config
-Version:	3.0.1
+Version:	3.1
 Release:	1%{?dist}
 Summary:	Configure accelerator subsystem devices
 # The entire source code is under GPLv2 except for accel-config
@@ -29,7 +29,7 @@ BuildRequires: make
 
 # accel-config is for configuring Intel DSA (Data-Streaming
 # Accelerator) subsystem in the Linux kernel. It supports x86_64 only.
-ExclusiveArch:	x86_64
+ExclusiveArch:	%{ix86} x86_64
 
 %description
 Utility library for configuring the accelerator subsystem.
@@ -90,6 +90,10 @@ make check
 %{_libdir}/pkgconfig/lib%{name}.pc
 
 %changelog
+* Mon Mar 29 2021 Yunying Sun <yunying.sun@intel.com> - 3.1-1
+- Added ix86 support back as 3.1 release fixed it
+- Updated to 3.1 release
+
 * Thu Feb 18 2021 Yunying Sun <yunying.sun@intel.com> - 3.0.1-1
 - Updated to 3.0.1 release
 - Removed ix86 support as so far it supports x86_64 only
