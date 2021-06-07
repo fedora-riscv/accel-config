@@ -2,7 +2,7 @@
 %global	debug_package	%{nil}
 
 Name:		accel-config
-Version:	3.1
+Version:	3.2
 Release:	1%{?dist}
 Summary:	Configure accelerator subsystem devices
 # The entire source code is under GPLv2 except for accel-config
@@ -90,6 +90,9 @@ make check
 %{_libdir}/pkgconfig/lib%{name}.pc
 
 %changelog
+* Mon Jun 7 2021 Yunying Sun <yunying.sun@intel.com> - 3.2-1
+- Updated to 3.2 release
+
 * Mon Mar 29 2021 Yunying Sun <yunying.sun@intel.com> - 3.1-1
 - Added ix86 support back as 3.1 release fixed it
 - Updated to 3.1 release
