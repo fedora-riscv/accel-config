@@ -3,7 +3,7 @@
 
 Name:		accel-config
 Version:	3.2
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Configure accelerator subsystem devices
 # The entire source code is under GPLv2 except for accel-config
 # library which is mostly LGPLv2.1, ccan/list which is BSD-MIT and
@@ -90,6 +90,9 @@ make check
 %{_libdir}/pkgconfig/lib%{name}.pc
 
 %changelog
+* Sat Jul 10 2021 Björn Esser <besser82@fedoraproject.org> - 3.2-2
+- Rebuild for versioned symbols in json-c
+
 * Mon Jun 7 2021 Yunying Sun <yunying.sun@intel.com> - 3.2-1
 - Updated to 3.2 release
 
