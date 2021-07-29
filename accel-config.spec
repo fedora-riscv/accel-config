@@ -2,8 +2,8 @@
 %global	debug_package	%{nil}
 
 Name:		accel-config
-Version:	3.2
-Release:	3%{?dist}
+Version:	3.4
+Release:	1%{?dist}
 Summary:	Configure accelerator subsystem devices
 # The entire source code is under GPLv2 except for accel-config
 # library which is mostly LGPLv2.1, ccan/list which is BSD-MIT and
@@ -90,6 +90,9 @@ make check
 %{_libdir}/pkgconfig/lib%{name}.pc
 
 %changelog
+* Thu Jul 29 2021 Yunying Sun <yunying.sun@intel.com> - 3.4-1
+- Updated to 3.4 release
+
 * Wed Jul 21 2021 Fedora Release Engineering <releng@fedoraproject.org> - 3.2-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
 
