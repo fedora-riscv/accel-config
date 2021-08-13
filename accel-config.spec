@@ -2,7 +2,7 @@
 %global	debug_package	%{nil}
 
 Name:		accel-config
-Version:	3.4
+Version:	3.4.1
 Release:	1%{?dist}
 Summary:	Configure accelerator subsystem devices
 # The entire source code is under GPLv2 except for accel-config
@@ -90,6 +90,9 @@ make check
 %{_libdir}/pkgconfig/lib%{name}.pc
 
 %changelog
+* Fri Aug 13 2021 Yunying Sun <yunying.sun@intel.com> - 3.4.1-1
+- Updated to 3.4.1 release
+
 * Thu Jul 29 2021 Yunying Sun <yunying.sun@intel.com> - 3.4-1
 - Updated to 3.4 release
 
